@@ -1,0 +1,46 @@
+body{
+  margin: 0;
+}
+
+.grey {
+  height: 600px;
+  width: 600px;
+  background-color: grey;
+  position: relative;
+}
+
+/* if we set a new container to be relative it is the perfect parent for the absolute positioning
+if you change the posotion of the red then its position will be relative to the new container*/
+/*red is nested in container so we need to make sure shape is different*/
+
+.red {
+  height: 200px;
+  width: 200px;
+  background-color: red;
+  position:absolute;
+  right:0;
+
+}
+
+.blue{
+  height: 200px;
+  width: 200px;
+  background-color: blue;
+  position: absolute;
+  left:200px;
+  top: 0;
+}
+.yellow{
+  height: 200px;
+  width: 200px;
+  background-color: yellow;
+  position:fixed; /*this simply means that if you scroll through the webpage it will remain the same*/ /*when scrolling the yellow stays fixed*/
+  left:0;
+  top: 0;
+}
+
+.mountain {
+  position:absolute;
+
+}
+/*trcik you need to take out default html margin and set it to zero.
