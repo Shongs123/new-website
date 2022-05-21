@@ -1,0 +1,240 @@
+body {
+  margin: 0;
+  text-align: center;
+  font-family: 'Merriweather', serif;
+  color: #40514E;
+
+  /*default is serif*/
+  /* if you want sans serif you can say verdana,sans serif if the browser does not have verdana it will default
+  to standard san serif
+  web safe fonts most operating systems will be able to render them. https://www.w3schools.com/cssref/css_websafe_fonts.asp
+  guides you to thw best font. From this website we can get fall backs
+   https://www.cssfontstack.com/*/
+  /* font-family:"Helvetica Neue", Helvetica,Arial, sans serif;
+  this means uses helvetica Neue if it is not there use helvetica if not there use arial if that is not present use sans serif
+  what if you want eveyone to see the font as intended?
+  You can use fonts embedding go to
+  they have many font families
+  Head Over to Design School 101 - Typography*/
+  /*whatever you set the size for the body to will be added on if you have a size specificed in the heading
+  the parent of h1 is the body*/
+}
+/* for margin size rem, px and % they apply*/
+h1 {
+  font-size: 5.625rem; /*if you have say 2rem it means set the size to the root ignore the parent value*/     /*to make this dynamic we can use a %, 100% is pixel size to get 90 we need to say 100% = 16 therefore 90/16 is 5.62
+  another method is to use em. em is phoenetic pronounciation of m, this is because the width of captial m 16 pixes is 100% and it is 1em
+  with zoom it does not matter if website is static or dynamic. you can change the sizing*/
+  margin-top: 50px auto 0;
+  font-family: 'Sacramento', cursive;
+  color: #66BFBF;
+  line-height: 2; /*preferred way to give line height is a value*/
+  /*know we are going to increase the font size*/
+  /*px is equivalant of hitting 90 in drop down*/
+}
+
+/* i am programmer change to H2 and 40px*/
+
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  color: #66BFBF;
+  font-weight: normal; /*want to be normal and de-emphasize*/
+  padding-bottom: 10px;
+}
+
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  color: #66BFBF;
+}
+
+li{
+  text-align: left;
+  list-style-position:inside;
+  color: black;
+}
+
+hr{
+  border: dotted #EAF6F6 6px;
+  border-bottom: none;
+  width: 4%;
+  /*make sure to use percentage so that it scales with website*/
+  margin: 100px auto;
+  /*
+  border-style: dotted none none;
+  width:5%;
+  border-color:grey;
+  border-width:5px;*/
+
+}
+
+a{
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+  color:#11999E;
+}
+
+a:hover{
+  color: #EAF6F6;
+}
+
+p{
+  line-height: 2;
+}
+
+
+/*margin top right bottom then left*/
+/*this works if we have in line block element such as images or if we have full block with elements like h1
+if you change h1 to 10% then it wont be centered aligned
+we can use the margin
+if we use auto we center the element vertically or horizontally*/
+/* text alighn will center everything that does not have a width set*/
+/*div{
+  background-color: #E4F9F5;
+}*/
+.TopContainer {
+  /*width: 200px;
+  height: 200px;*/
+  background-color: #E4F9F5;
+  /*position: fixed;/*this is how you did it below is how the bootcamp teacher did it*/
+  position: relative;
+  padding-top: 100px;
+}
+
+.middle-container{
+  background-color: white;
+  margin: 100px 0 0 0;
+
+}
+  /*width: 200px;
+  height: 200px;
+  background-color: #7F8487
+}
+
+
+.BottomContainer{
+  /*width: 200px;
+  height: 200px;
+  background-color: #D0C9C0;*/
+.bottom-container{
+background-color: #66BFBF;
+padding: 50px 0 20px;
+margin: 0 0 0 0;
+text-align: center;
+position: relative;
+}
+
+.Profile-Photo{
+  margin: 100px 0 0 0;
+}
+
+.pro {
+  text-decoration: underline;
+}
+
+.bottom-cloud {
+  position: absolute;
+  /*left: 3px;
+  bottom: 3px;*/
+}
+
+
+.top-cloud {
+  position: absolute;
+  top: 40px;
+  right: 300px;
+}
+.Profile-Photo{
+  height: 200px;
+  width: 250px;
+}
+
+.skill-row{
+  width: 50%;
+  margin: 100px auto 100px auto;
+  text-align: left;
+
+
+  /*have margin at 100 and 100 and then the rest as auto*/
+  /*we use skill-row because all the text and image falls in this div*/
+}
+.image-2{
+  /*text-align:left;*/
+  width: 50%;
+  float: right;/*this allows you to place text next to the image. */
+  margin-right: 40px;
+}
+
+
+.image-1{
+  width: 60%;
+  float: Left;/*this allows you to place text next to the image. */
+  margin-right: 30px;
+}
+
+.copy{
+  color: #EAF6F6;
+  font-size: 0.75rem;
+  padding: 20px 0;
+}
+.footer-link{
+  margin: 10px 20px;
+  color:#11999E;
+
+}
+
+.Edu{
+  color: #11999E;
+}
+
+.imp{
+  /*color: #40514E;*/
+  width: 30%;
+  margin: auto;
+}
+
+.btn{
+  background: #11cdd4;
+  background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -moz-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -ms-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -o-linear-gradient(top, #11cdd4, #11999e);
+  background-image: linear-gradient(to bottom, #11cdd4, #11999e);
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  border-radius: 8px;
+  font-family: 'Montserrat', sans-serif;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #30e3cb;
+  background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -moz-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -ms-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
+  text-decoration: none;
+
+}
+.contact-me{
+    padding: 50px;
+}
+.par{
+  margin:40px auto 60px;
+  width: 40%;
+}
+
+/*there is a another element called clear which is the anti float. Essentially what it does is that if we wnat to wrap one item what we
+can do is use the clear element and with that the text will display below the image
+clear means that any instriction following it left, right, top will make sure that there is nothing in the way*/
+/*.ol{
+clear: left;
+}
+only use float when needed dont use it i for positionoing, itis only for wrapping
+relative, absloute, margin and padding.
+you can
+*/
